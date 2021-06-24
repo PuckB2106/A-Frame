@@ -25,7 +25,7 @@
         animation="property: rotation;
                    to: 90 360 180;
                    dur: 2000;
-                   easing: linear;
+                   easing: easeOutCubic;
                    loop: true" >
       </a-box>
       <a-box id="myOtherBox"
@@ -37,10 +37,10 @@
         material="src: #wood2"
         shadow
         animation="property: rotation;
-                   to: 360 180 360;
-                   dur: 3000;
-                   easing: easeInOutQuad;
-                   loop: true" >
+                   to: 360 180 90;
+                   dur: 2000;
+                   easing: linear;
+                   loop: true">
       </a-box>
       <a-plane id="ground"
         position="0 0 -4"
